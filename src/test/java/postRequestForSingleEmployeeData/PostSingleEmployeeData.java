@@ -39,15 +39,6 @@ public class PostSingleEmployeeData extends BaseClass {
     void verifyStatusCode()
     {
         int statusCode = response.getStatusCode();
-        Assert.assertEquals(statusCode,200);
+        Assert.assertEquals(statusCode,201);
     }
-
-    @Test(priority = 3)
-    void verifyEmployeeDataSavedSuccessfully()
-    {
-        String responseBody = response.getBody().asString();
-        Assert.assertEquals(responseBody != null, true);
-    }
-
-
 }

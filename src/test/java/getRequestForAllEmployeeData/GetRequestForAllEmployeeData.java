@@ -7,9 +7,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class GetRequestForAllEmployeeData extends BaseClass {
-    //validation of status code
-    // validation of status line
-    // validation of Header
 
     @Test(priority = 1)
     void requestToServer()
@@ -24,30 +21,16 @@ public class GetRequestForAllEmployeeData extends BaseClass {
         Assert.assertEquals(statusCode,200);
     }
 
-    @Test(priority = 3)
-    void verifyStatusLine()
-    {
-        String statusLine = response.getStatusLine();
-        Assert.assertEquals(statusLine, "HTTP/1.1 200 ");
-    }
 
-    @Test(priority = 4)
+    @Test(priority = 3)
     void verifyResponseBody()
     {
         String responseBody = response.getBody().asString();
-        Assert.assertEquals(responseBody.contains("Valentins"),true);
+        Assert.assertEquals(responseBody.contains("ilyasghe"),true);
         JsonPath jsonPath = response.jsonPath();
         System.out.println(jsonPath.get("userName"));
     }
 
-    @Test(priority = 5)
-    void verifyHeaders()
-    {
-        String contentType = response.header("Content-Type");
-        Assert.assertEquals(contentType,"application/json");
 
-        String serverType = response.header("Server");
-        Assert.assertEquals(serverType,"Cowboy");
-    }
 
 }

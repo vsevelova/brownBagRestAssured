@@ -35,11 +35,4 @@ public class putRequestToServerToUpdateEmployeeRecord extends BaseClass {
        Assert.assertEquals(204, statusCode);
    }
 
-   @Test(priority = 3)
-    void verifyUpdatedEmployeeRecords()
-   {
-     //  System.out.println(response.getBody());
-       // updated information only verify in get method in this case because here PUT end point return only status.
-
-   }
 }
