@@ -20,17 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5ce26f8-c3e1-498f-b0e5-6dfa1f512ac8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/configuration.properties" beforeDir="false" afterPath="$PROJECT_DIR$/resources/configuration.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/getRequestForAllEmployeeData/GetRequestForAllEmployeeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/getRequestForAllEmployeeData/GetRequestForAllEmployeeData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/getRequestForSingleEmployeeData/SingleEmployeeRecordGetRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/postRequestForMultipleEmployeeData/PostRequestForMultipleData.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/postRequestForSingleEmployeeData/PostSingleEmployeeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/postRequestForSingleEmployeeData/PostSingleEmployeeData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/updateEmployeeData/putRequestToServerToUpdateEmployeeRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/updateEmployeeData/putRequestToServerToUpdateEmployeeRecord.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

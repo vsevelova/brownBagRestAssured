@@ -20,17 +20,4 @@ public class GetRequestForAllEmployeeData extends BaseClass {
         int statusCode = response.getStatusCode();
         Assert.assertEquals(statusCode,200);
     }
-
-
-    @Test(priority = 3)
-    void verifyResponseBody()
-    {
-        String responseBody = response.getBody().asString();
-        Assert.assertEquals(responseBody.contains("ilyasghe"),true);
-        JsonPath jsonPath = response.jsonPath();
-        System.out.println(jsonPath.get("userName"));
-    }
-
-
-
 }
