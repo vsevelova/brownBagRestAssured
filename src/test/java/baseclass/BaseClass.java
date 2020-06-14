@@ -12,10 +12,10 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class BaseClass {
-    public static RequestSpecification httpRequest;
-    public static Response response;
-    public Properties properties = new Properties();
-    public String resoucesPath = "resources\\configuration.properties";
+    protected static RequestSpecification httpRequest;
+    protected static Response response;
+    protected Properties properties = new Properties();
+    private String resoucesPath = "resources\\configuration.properties";
 
     @BeforeClass
     public void setUp() throws IOException {
@@ -23,6 +23,5 @@ public class BaseClass {
         properties.load(reader);
         RestAssured.baseURI = properties.getProperty("baseURL");
         httpRequest = RestAssured.given();
-
     }
 }
