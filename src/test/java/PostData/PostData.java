@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 public class PostData extends BaseClass {
 
     @Test
-    void postRequestToServer()
+    void createNewUser()
     {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("email", "oleg.mykulskyi@accenture.com");

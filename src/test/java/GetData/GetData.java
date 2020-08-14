@@ -6,10 +6,10 @@ import io.restassured.path.json.JsonPath;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class GetAllUsers extends BaseClass {
+public class GetData extends BaseClass {
 
     @Test
-    void getRequestToServer()
+    void getAllUsers()
     {
         response = httpRequest.request(Method.GET, properties.getProperty("allUsers"));
         int statusCode = response.getStatusCode();
