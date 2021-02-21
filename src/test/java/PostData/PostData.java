@@ -2,7 +2,7 @@ package PostData;
 
 import baseclass.BaseClass;
 import io.restassured.http.Method;
-import org.json.simple.JSONObject;
+import com.google.gson.JsonObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -11,15 +11,15 @@ public class PostData extends BaseClass {
     @Test
     void createNewUser()
     {
-        JSONObject jsonObject = new JSONObject();
-        jsonObject.put("email", "oleg.mykulskyi@accenture.com");
-        jsonObject.put("name", "Oleg Mykulskyi");
-        jsonObject.put("phone", "+37120300655");
-        jsonObject.put("userName", "oleg.mykulskyi");
-        jsonObject.put("website", "https://my.accenture.lv/users/oleg_mykulskyi");
+        JsonObject payload = new JsonObject();
+        payload.addProperty("email", "oleg.mykulskyi@accenture.com");
+        payload.addProperty("name", "Oleg Mykulskyi");
+        payload.addProperty("phone", "+37120300655");
+        payload.addProperty("userName", "oleg.mykulskyi");
+        payload.addProperty("website", "https://my.accenture.lv/users/oleg_mykulskyi");
 
         httpRequest.header("content-Type", "application/json");
-        httpRequest.body(jsonObject.toJSONString());
+        httpRequest.body(payload.toString());
         response = httpRequest.request(Method.POST,properties.getProperty("postData"));
         int statusCode = response.getStatusCode();
         Assert.assertEquals(statusCode,201);

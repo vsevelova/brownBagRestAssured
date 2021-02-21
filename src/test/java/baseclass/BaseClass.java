@@ -1,10 +1,9 @@
 package baseclass;
 
 import io.restassured.RestAssured;
-import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
-import org.testng.annotations.BeforeClass;
+import org.junit.BeforeClass;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
